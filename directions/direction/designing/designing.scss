@@ -1,0 +1,162 @@
+@import "../../../value.scss";
+@import "../../../standard.scss";
+@import "../../../navigation/navigation.scss";
+@import "../../../footer/footer.scss";
+
+main {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  > h1 {
+    margin-bottom: 50px;
+    font-size: 25px;
+  }
+  height: 3000px;
+}
+.points {
+  background-color: $lightblue;
+  border-radius: 43px;
+  color: $white;
+  height: 396px;
+  width: 910px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+  &_exam {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    li {
+      margin-top: 10px;
+    }
+    &_place {
+      display: flex;
+      justify-content: space-evenly;
+      width: 200px;
+    }
+  }
+  
+}
+.passingScore {
+  font-size: 96px;
+  line-height: 131px;
+  font-weight: 700;
+  color: #ffffff;
+
+  text-shadow: 0px 0px 7px $blue;
+  margin-bottom: 150px;
+}
+.descriptionName{
+    display: flex;
+    align-items: center;
+    margin-right: 400px;
+    margin-bottom: 30px;
+}
+.descriptionText{
+    width: 910px;
+    height: 324px;
+    background-color: $lightblue;
+    border-radius: 43px;
+    color: $white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 65px;
+}
+button{
+    width: 319px;
+    height: 68px;
+    font-size: 20px;
+}
+.plan{
+    margin-bottom: 30px;
+}
+.partners{
+    margin-top: 200px;
+}
+.partnersImg{
+  margin-top: 100px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 147px 274px 204px;
+  gap: 20px;
+  img{
+    width: 100%;
+  }
+}
+.contactInfo{
+    margin: 30px 0;
+}
+.window{
+    width: 490px;
+    height: 186px;
+    box-shadow: 0px 4px 4px rgba(15, 60, 218, 0.25);
+    display: flex;
+    align-items: center;
+    margin-bottom: 54px;
+    img{
+        margin-left: 20px;
+        width: 126px;
+        height: 126px;
+        border: $blue 2px solid;
+        border-radius: 100%;
+    }
+    p{
+        
+        margin-left: 15px;
+        text-align: center;
+        width: 286px;
+        font-size: 15px;
+    }
+    h4{
+        margin-left: 15px;
+        font-family: $opensans;
+        font-weight: 700;
+    }
+}
+
+@media (max-width:1000px) {
+  main{
+    height: 3706px;
+  }
+  h1{
+    font-size: 25px;
+  }
+  .points{
+    width: auto;
+  }
+  .descriptionName{
+    margin: 0;
+  }
+  .descriptionText{
+    width: auto;
+    width: 90%;
+    border-radius: 15px;
+    p{
+      font-size: 12px;
+    }
+  }
+  .partnersImg{
+    grid-template-columns: repeat(1,250px);
+  }
+  .window{
+    width: 250px;
+    img{
+      margin-left: 10px;
+      width: 75px;
+      height: 75px;
+    }
+    h4{
+      font-size: 13px;
+    }
+    p{
+      font-size: 12px;
+      width: auto;
+    }
+  }
+}

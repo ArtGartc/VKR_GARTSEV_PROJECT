@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-family: $opensans;
+}
+h1 {
+  font-family: $opensans;
+  color: $blue;
+  background-color: $white;
+}
+h2 {
+  font-family: $opensans;
+  color: $blue;
+}
+h4 {
+  font-family: $opensans;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+li {
+  list-style: none;
+  font-family: $opensans;
+}
+button {
+  cursor: pointer;
+  background-color: $lightblue;
+  border-radius: 44px;
+  border: $lightblue;
+  font-family: $opensans;
+  font-size: 18px;
+  color: $white;
+  :hover{
+    color: $blue;
+  }
+}
+main{
+  background-image: url(/assets/particles/Particles-0.1s-1602px.svg);
+background-size: cover;
+}
+
+@media (max-width:1000px) {
+  h1{
+    font-size: 30px;
+  }
+  h2{
+    font-size:20px
+  }
+}

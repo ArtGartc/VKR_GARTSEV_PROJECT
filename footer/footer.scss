@@ -1,0 +1,51 @@
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: $blue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .fkti{
+        margin-top: 30px;
+        align-self: flex-start;
+        h4{
+            margin-top: 20px;
+            color: $white;
+            font-size: 25px;
+            width: 400px;
+            height: 100%;
+        }
+    }
+    .social{
+        p{
+            color: $white;
+            font-size: 20px;
+            margin-left: 5px;
+            margin-bottom: 15px;
+        }
+        img{
+            margin-left: 5px;
+            filter: grayscale(100%);
+            transition: all 0.5s;
+            &:hover{
+                filter: none;
+            }
+        }
+    }
+    .contacts{
+        h4{
+            color:$white ;
+        }
+        p{
+            color: $white;
+        }
+    }
+}
+@media (max-width:1000px) {
+    
+
+footer{
+    flex-direction: column;
+    height: 570px;
+  }
+}

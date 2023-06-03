@@ -1,0 +1,43 @@
+@import "../value.scss";
+@import "../standard.scss";
+@import "../navigation/navigation.scss";
+@import "../footer/footer.scss";
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 4000px;
+}
+
+.partners {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(3, 310px);
+  a {
+    display: flex;
+    border: $lightblue 1px solid;
+    border-radius: 10px;
+  }
+  img {
+    width: 100%;
+    align-self: center;
+  }
+}
+@media (max-width:1000px){
+  .partners{
+    gap: 30px;
+    grid-template-columns: repeat(2,210px);
+  }
+}
+@media (max-width:480px){
+  main{
+    margin: 50px 0 ;
+    height: 100%;
+  }
+  .partners{
+    gap: 30px;
+    grid-template-columns: repeat(1,210px);
+  }
+}

@@ -1,0 +1,47 @@
+@import "../value.scss";
+@import "../standard.scss";
+@import "../navigation/navigation.scss";
+@import "../footer/footer.scss";
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height:2000px;
+}
+.club{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 50px;
+    img{
+        height: 330px;
+        width: 330px;
+    }
+}
+
+@media (max-width:1000px){
+    .club{
+      gap: 30px;
+      grid-template-columns: repeat(2,210px);
+      img{
+        height: 100%;
+        width:100%;
+    }
+    }
+  }
+  @media (max-width:480px){
+    main{
+      margin: 50px 0 ;
+      height: 100%;
+      gap: 50px;
+    }
+    .club{
+      gap: 30px;
+      grid-template-columns: repeat(1,210px);
+      img{
+        height: 100%;
+        width:100%;
+    }
+    }
+  }

@@ -1,0 +1,123 @@
+@import "../value.scss";
+@import "../standard.scss";
+@import "../navigation/navigation.scss";
+@import "../footer/footer.scss";
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 4000px;
+  p {
+    font-size: 25px;
+  }
+  a {
+    text-decoration: underline;
+    color: $lightblue;
+  }
+  h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    width: 800px;
+    height: 90px;
+    background-color: $lightblue;
+    border-radius: 53px;
+    text-align: center;
+  }
+}
+.step {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 600px;
+  &--rules {
+    height: 800px;
+  }
+  &--document {
+    height: 760px;
+  }
+  &--exam {
+    height: 1200px;
+  }
+  &_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1142px;
+    height: 438px;
+    border: 1px $blue solid;
+    border-radius: 53px;
+    text-align: center;
+    background-color: $white;
+    span {
+      color: red;
+    }
+    ul {
+      li {
+        text-align: left;
+        margin-left: 10px;
+        margin-top: 10px;
+        font-size: 25px;
+      }
+      >li{
+        list-style: inside;
+      }
+    }
+    &_auto{
+        margin-left: 70px;
+        >li{
+        list-style: auto;
+    }
+    }
+    &_lowerAlpha{
+        margin-left: 40px ;
+        >li{
+        list-style: lower-alpha;
+    }
+    }
+    &_circle{
+        margin-left: 40px;
+        >li{
+        list-style: circle;
+    }
+    }
+    &--rules {
+      height: 600px;
+    }
+    &--document {
+      height: 560px;
+      ul {
+        align-self: flex-start;
+      }
+    }
+    &--exam {
+      height: 1000px;
+    }
+  }
+}
+
+@media (max-width:1000px) {
+  .step{
+    h2{
+      width: auto;
+    }
+    &_text{
+      width: auto;
+      p{
+        font-size: 15px;
+
+      }
+      ul {
+        li {
+
+          font-size: 14px;
+        }
+    }
+  }
+}
+}

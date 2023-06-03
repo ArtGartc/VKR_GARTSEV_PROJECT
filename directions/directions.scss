@@ -1,0 +1,121 @@
+@import "../value.scss";
+@import "../standard.scss";
+@import "../navigation/navigation.scss";
+@import "../footer/footer.scss";
+
+main {
+  width: 100%;
+  min-height: 1080px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  > p {
+    width: 1200px;
+    text-align: center;
+    background-color: $white;
+  }
+}
+.page-name {
+  display: flex;
+}
+.directions {
+  &_form {
+    width: 1090px;
+    height: 54px;
+    background-color: $lightblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &--number {
+      color: $yellow;
+      margin-left: 10px;
+    }
+    &--name {
+      color: $white;
+    }
+    img {
+      margin-right: 10px;
+    }
+    &_information {
+      background-color: $grey;
+      height: 243px;
+      display: none;
+      justify-content: space-evenly;
+      align-items: center;
+      &_scores {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+      &_exams {
+        align-self: normal;
+        margin-top: 4%;
+      }
+      &_places {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+      }
+      li {
+        list-style: auto;
+        font-size: 16px;
+      }
+      h4 {
+        font-weight: 700;
+        font-size: 16px;
+      }
+      p {
+        font-size: 16px;
+      }
+      button {
+        width: 293px;
+        height: 65px;
+      }
+    }
+  }
+}
+
+@media (max-width:1000px) {
+  main{
+    >p{
+      width: auto;
+    }
+  }
+  p{
+    font-size: 10px;
+    width: 80%;
+  }
+  .directions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &_form{
+      justify-content: baseline;
+    width: 90%;
+    &--number{
+      width: 20%;
+    }
+    &_information{
+      width: 90%;
+      p{
+        font-size: 12px;
+      }
+      h4{
+        font-size: 13px;
+      }
+      button{
+        width: 100px;
+        font-size: 13px;
+      }
+      li{
+        font-size: 12px;
+        list-style-position: inside;
+      }
+    }
+  } ;
+}
+}
